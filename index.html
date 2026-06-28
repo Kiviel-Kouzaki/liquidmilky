@@ -1,12 +1,3 @@
-Sempurna — file utuhnya bersih (tidak ter-mangle), jadi aman kurakit. 
-Catatan scope: ini build optimasi (P0+P1+P2) dari v2 — bukan yang berisi 4 fitur baru (joined/lokasi/beta/share); itu trek roadmap terpisah yang bisa dilapis setelah ini.
-Satu-satunya item yang sengaja kutinggalkan sebagai TODO adalah pin versi pasti dependensi CDN (#10): aku tak bisa memverifikasi nomor versi terbaru yang benar dari sini, dan kalau salah pin app-mu bisa rusak. Aku tandai dengan komentar di kode. Sisanya semua sudah masuk.
-Ringkasan perubahan yang diterapkan
-• P0: fix orientasi EXIF (compressImage), hapus background-attachment:fixed, sanitizeUsername di-cap 30, fallback bg gagal-muat, preconnect/dns-prefetch, pesan ramah saat username bentrok (23505).
-• P1: cleanup media (nama tetap + upsert + cacheControl + cache-bust), retry saat save gagal, lazy-init LiquidGlass via IntersectionObserver, loading="lazy"+decoding pada <img>. (Validasi size/MIME server, batas payload, _headers/pin → di bagian server-side bawah.)
-• P2: alt text bermakna, redirectTo ke root, fitHeight di-batch via rAF, skeleton/dim saat load profil publik. (Index DB → server-side bawah.)
-
- index.html  (build v3 — optimized)
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
