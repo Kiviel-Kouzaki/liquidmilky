@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="18" viewBox="0 0 40 18">
+  <rect rx="9" width="40" height="18" fill="#6d5efc"/>
+  <text x="20" y="13" text-anchor="middle" font-family="system-ui,sans-serif"
+        font-size="10" font-weight="700" fill="#fff" letter-spacing="1">BETA</text>
+</svg>
